@@ -1,0 +1,21 @@
+<ion-header>
+    <ion-toolbar color="primary">
+        <ion-title>
+            Pendientes
+        </ion-title>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content>
+    <app-listas [terminada]="false"></app-listas>
+
+
+
+
+    <ion-fab vertical="bottom" horizontal="end" slot="fixed" (click)="agregarLista()">
+        <ion-fab-button>
+            <ion-icon name="add"></ion-icon>
+        </ion-fab-button>
+    </ion-fab>
+
+</ion-content>
